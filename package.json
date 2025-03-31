@@ -1,0 +1,33 @@
+{
+  "name": "youtube-transcript-scrapper",
+  "version": "1.0.0",
+  "description": "A service to fetch and format YouTube video transcripts",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "youtube",
+    "transcript",
+    "api",
+    "express",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "winston": "^3.11.0",
+    "youtube-transcript": "^1.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

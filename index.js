@@ -6,7 +6,7 @@ import { decode } from 'html-entities';
 
 // Configure logging
 const logger = winston.createLogger({
-    level: 'debug',
+    level: 'info',
     format: winston.format.simple(),
     transports: [new winston.transports.Console()]
 });
@@ -17,6 +17,10 @@ const PORT = 3002;
 
 // Middleware
 app.use(express.json());
+
+app.get('/', async (req, res) => {
+    res.send('Serwer YTS działa poprawnie ✔️');
+});
 
 // Single API endpoint for transcripts
 app.get('/api/transcript', async (req, res) => {
